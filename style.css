@@ -1,0 +1,117 @@
+/* Agar font digunakan diseluruh body */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Gaya umum untuk gambar agar responsif dan rapi */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  background-image: url("images/backshoes.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* Overlay gelap */
+.hero-overlay {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ubah 0.5 sesuai tingkat gelap yang diinginkan */
+  z-index: 1;
+}
+
+/* Teks tetap di atas overlay */
+.hero-content {
+  z-index: 2;
+}
+
+/* Responsif teks */
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Gaya logo pada navbar */
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna latar navbar */
+.navbar {
+  background-color: #ff6d33;
+}
+
+/* Tampilan link pada navbar */
+.nav-link-custom {
+  font-weight: 600;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Efek saat link di-hover */
+.nav-link-custom:hover {
+  text-decoration: underline;
+}
+
+/* Tampilan kartu utama */
+.card {
+  border-radius: 1.5rem;
+}
+
+/* Efek saat gambar di-hover */
+img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Gaya gambar dalam konten utama */
+main img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Gaya footer */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Gaya responsif untuk layar kecil */
+@media (max-width: 768px) {
+  img.img-fluid {
+    max-height: 300px;
+  }
+}
